@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LogicBuilder.App.AI.Utils.Tests/LogicBuilder.App.AI.Utils.Tests.csproj" />
+  <Project Path="LogicBuilder.App.AI.Utils/LogicBuilder.App.AI.Utils.csproj" />
+</Solution>
