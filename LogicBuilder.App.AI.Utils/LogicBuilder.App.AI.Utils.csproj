@@ -29,6 +29,16 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\icon.png" Pack="true" PackagePath="\" Visible="False" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.400" PrivateAssets="All" />
+		<PackageReference Include="MinVer" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="16.2.0" />
 		<PackageReference Include="Microsoft.Agents.AI.Foundry" Version="1.22.0-preview.260918.1" />
 	</ItemGroup>
