@@ -26,7 +26,7 @@ namespace LogicBuilder.App.AI.Utils
 
             var message = new ChatMessage(ChatRole.User, userMessage);
 
-            AgentResponse agentResponse = await agent.RunAsync(message, session);
+            AgentResponse agentResponse = await agent.RunAsync(message, session, null, cancellationToken);
             string updatedForCitations = inlineCitationFormatter.FormatWithInlineLinks
             (
                 agentResponse.Text,

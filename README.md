@@ -1,5 +1,11 @@
 # LogicBuilder.App.AI.Utils
 
+[![CI](https://github.com/BpsLogicBuilder/LogicBuilder.App.AI.Utils/actions/workflows/ci.yml/badge.svg)](https://github.com/BpsLogicBuilder/LogicBuilder.App.AI.Utils/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/BpsLogicBuilder/LogicBuilder.App.AI.Utils/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/BpsLogicBuilder/LogicBuilder.App.AI.Utils/actions/workflows/github-code-scanning/codeql)
+[![codecov](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.AI.Utils/graph/badge.svg?token=BNP3X4R9HC)](https://codecov.io/gh/BpsLogicBuilder/LogicBuilder.App.AI.Utils)
+[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=BpsLogicBuilder_LogicBuilder.App.AI.Utils&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=BpsLogicBuilder_LogicBuilder.App.AI.Utils)
+[![NuGet](https://img.shields.io/nuget/v/LogicBuilder.App.AI.Utils.svg)](https://www.nuget.org/packages/LogicBuilder.App.AI.Utils)
+
 **LogicBuilder.App.AI.Utils** is a .NET library for declaratively building, running, and consuming [Microsoft Agent Foundry](https://learn.microsoft.com/azure/ai-foundry/) AI agents, rather than hand-coding the Azure AI Projects / `Microsoft.Agents.AI` SDK calls directly.
 
 It is intended for applications that need to:

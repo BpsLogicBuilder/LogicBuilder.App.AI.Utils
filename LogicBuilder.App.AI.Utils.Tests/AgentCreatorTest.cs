@@ -119,7 +119,7 @@ namespace LogicBuilder.App.AI.Utils.Tests
         // not directly instantiable without going through the real mapping pipeline).
         private sealed class FakeMappingOperationOptions : IMappingOperationOptions<object, AgentBuilder>
         {
-            public IDictionary<string, object> Items { get; } = new Dictionary<string, object>() { [MappingConstants.AI_PROJECT_CLIENT_CONTEXT] = new AIProjectClient(endpoint: new Uri("http://www.google.com"), tokenProvider: new ApiKeyTokenCredential("")) };
+            public Dictionary<string, object> Items { get; } = new Dictionary<string, object>() { [MappingConstants.AI_PROJECT_CLIENT_CONTEXT] = new AIProjectClient(endpoint: new Uri("http://www.google.com"), tokenProvider: new ApiKeyTokenCredential("")) };
 
             public Func<Type, object> ServiceCtor => throw new NotImplementedException();
 
