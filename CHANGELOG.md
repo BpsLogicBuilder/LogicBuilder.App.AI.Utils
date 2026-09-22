@@ -1,3 +1,4 @@
+* 2026-09-22 - AB#229: Add handler and creator classes to support the SignalR Hub.
 * 2026-09-21 - AB#229: Add CI CD workflows.
 * 2026-09-21 - AB#229: Adding shared library for creating agents.
 * 2026-09-21 - Add project files.
