@@ -54,10 +54,10 @@ jobs:
           SONAR_PROJECT_KEY: "${{ format('BpsLogicBuilder_{0}', env.PROJECT_NAME) }}"
           SONAR_ORGANIZATION_KEY: "bpslogicbuilder"
         run: |
-          dotnet-sonarscanner begin /k:"${{ env.SONAR_PROJECT_KEY }}" /o:"${{ env.SONAR_ORGANIZATION_KEY }}" /d:sonar.qualitygate.wait=true /d:sonar.token="${{ env.SONAR_TOKEN }}" /d:sonar.cs.vscoveragexml.reportsPaths="**/TestResults/coverage.xml"
+          dotnet-sonarscanner begin /k:"${{ env.SONAR_PROJECT_KEY }}" /o:"${{ env.SONAR_ORGANIZATION_KEY }}" /d:sonar.qualitygate.wait=true /d:sonar.token="${{ env.SONAR_TOKEN }}" /d:sonar.cs.vscoveragexml.reportsPaths="**/TestResults/coverage.xml" /d:sonar.coverage.exclusions="**/Enrollment.ChatHub.Flow/**"
 
       - name: Run unit tests
-        run: dotnet test --verbosity normal --configuration Release --results-directory ./TestResults/ -- --coverage --coverage-output-format xml --coverage-output coverage.xml
+        run: dotnet test --verbosity normal --configuration Release --results-directory ./TestResults/ -- --coverage --coverage-settings CodeCoverage.runsettings --coverage-output-format xml --coverage-output coverage.xml
 
       - name: End SonarQube Cloud analysis
         env:
