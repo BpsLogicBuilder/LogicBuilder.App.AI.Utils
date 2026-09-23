@@ -1,3 +1,4 @@
+* 2026-09-23 - AB#229: Add Logic Builder workflow implementation.
 * 2026-09-22 - AB#229: Fix CodeCov recommendations.
 * 2026-09-22 - AB#229: Fix SonarCloud recommendations.
 * 2026-09-22 - AB#229: Add handler and creator classes to support the SignalR Hub.

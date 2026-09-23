@@ -2,5 +2,6 @@
 {
     public interface IResponse
     {
+        public bool Success { get; set; }
     }
 }
