@@ -31,12 +31,7 @@ namespace LogicBuilder.App.AI.Utils.Tests
         public void TestAgentMapping()
         {
             //arrange
-            DefaultAzureCredentialOptions credentialOptions = new()
-            {
-                ExcludeEnvironmentCredential = true,
-                ExcludeManagedIdentityCredential = true
-            };
-            var credential = new DefaultAzureCredential(credentialOptions);
+            var credential = new DefaultAzureCredential();
 
             AIProjectClient projectClient = new(endpoint: new Uri("http://www.google.com"), tokenProvider: credential);
 

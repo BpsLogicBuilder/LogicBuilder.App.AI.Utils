@@ -19,19 +19,13 @@ namespace LogicBuilder.App.AI.Utils
             if (string.IsNullOrEmpty(endpoint))
                 throw new InvalidOperationException("Missing Foundry Endpoint config.");
 
-            DefaultAzureCredentialOptions credentialOptions = new()
-            {
-                ExcludeEnvironmentCredential = true,
-                ExcludeManagedIdentityCredential = true
-            };
-
             return mapper.Map<AgentBuilder>
             (
                 agentParameters,
                 opts => opts.Items[MappingConstants.AI_PROJECT_CLIENT_CONTEXT] = new AIProjectClient
                 (
                     endpoint: new Uri(endpoint), 
-                    tokenProvider: new DefaultAzureCredential(credentialOptions)
+                    tokenProvider: new DefaultAzureCredential()
                 )
             ).Build();
         }
