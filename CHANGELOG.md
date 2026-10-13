@@ -1,3 +1,4 @@
+* 2026-10-13 - AB#233: Reference the current commit for pre-release versioning.
 * 2026-10-13 - AB#233: Removing DefaultAzureCredentialOptions.
 * 2026-09-23 - AB#229: Add Logic Builder workflow implementation.
 * 2026-09-22 - AB#229: Fix CodeCov recommendations.
